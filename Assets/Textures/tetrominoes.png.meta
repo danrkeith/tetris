@@ -212,6 +212,21 @@ TextureImporter:
   - first:
       213: -2086587774403062399
     second: tetrominoes_I3
+  - first:
+      213: 309483303393393404
+    second: tetrominoes_35
+  - first:
+      213: 5011307201413328349
+    second: tetrominoes_36
+  - first:
+      213: 2910500097362231043
+    second: tetrominoes_37
+  - first:
+      213: 2186976090488441348
+    second: tetrominoes_38
+  - first:
+      213: 2353043626865526191
+    second: tetrominoes_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -304,12 +319,12 @@ TextureImporter:
       name: tetrominoes_iconT
       rect:
         serializedVersion: 2
-        x: 3
-        y: 250
-        width: 18
-        height: 12
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +340,12 @@ TextureImporter:
       name: tetrominoes_T0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 248
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,12 +361,12 @@ TextureImporter:
       name: tetrominoes_T1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 244
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,12 +382,12 @@ TextureImporter:
       name: tetrominoes_T2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 248
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,12 +403,12 @@ TextureImporter:
       name: tetrominoes_T3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 244
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +424,12 @@ TextureImporter:
       name: tetrominoes_iconJ
       rect:
         serializedVersion: 2
-        x: 3
-        y: 210
-        width: 18
-        height: 12
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +445,12 @@ TextureImporter:
       name: tetrominoes_J0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 208
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +466,12 @@ TextureImporter:
       name: tetrominoes_J1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 204
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,12 +487,12 @@ TextureImporter:
       name: tetrominoes_J2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 208
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,12 +508,12 @@ TextureImporter:
       name: tetrominoes_J3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 204
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,12 +529,12 @@ TextureImporter:
       name: tetrominoes_iconZ
       rect:
         serializedVersion: 2
-        x: 3
-        y: 170
-        width: 18
-        height: 12
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,12 +550,12 @@ TextureImporter:
       name: tetrominoes_Z0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 168
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,12 +571,12 @@ TextureImporter:
       name: tetrominoes_Z1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 164
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,12 +592,12 @@ TextureImporter:
       name: tetrominoes_Z2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 168
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,12 +613,12 @@ TextureImporter:
       name: tetrominoes_Z3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 164
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,10 +634,10 @@ TextureImporter:
       name: tetrominoes_iconO
       rect:
         serializedVersion: 2
-        x: 6
-        y: 130
-        width: 12
-        height: 12
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +655,10 @@ TextureImporter:
       name: tetrominoes_O0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 128
-        width: 16
-        height: 16
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -661,10 +676,10 @@ TextureImporter:
       name: tetrominoes_O1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 128
-        width: 16
-        height: 16
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,10 +697,10 @@ TextureImporter:
       name: tetrominoes_O2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 128
-        width: 16
-        height: 16
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +718,10 @@ TextureImporter:
       name: tetrominoes_O3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 128
-        width: 16
-        height: 16
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,12 +739,12 @@ TextureImporter:
       name: tetrominoes_iconS
       rect:
         serializedVersion: 2
-        x: 3
-        y: 90
-        width: 18
-        height: 12
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,12 +760,12 @@ TextureImporter:
       name: tetrominoes_S0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 88
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,12 +781,12 @@ TextureImporter:
       name: tetrominoes_S1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 84
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,12 +802,12 @@ TextureImporter:
       name: tetrominoes_S2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 88
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,12 +823,12 @@ TextureImporter:
       name: tetrominoes_S3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 84
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -829,12 +844,12 @@ TextureImporter:
       name: tetrominoes_iconL
       rect:
         serializedVersion: 2
-        x: 3
-        y: 50
-        width: 18
-        height: 12
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,12 +865,12 @@ TextureImporter:
       name: tetrominoes_L0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 48
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,12 +886,12 @@ TextureImporter:
       name: tetrominoes_L1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 44
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -892,12 +907,12 @@ TextureImporter:
       name: tetrominoes_L2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 48
-        width: 24
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -913,12 +928,12 @@ TextureImporter:
       name: tetrominoes_L3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 44
-        width: 16
-        height: 24
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -935,11 +950,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
-        width: 24
-        height: 6
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -955,12 +970,12 @@ TextureImporter:
       name: tetrominoes_I0
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 8
+        width: 32
         height: 32
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -976,12 +991,12 @@ TextureImporter:
       name: tetrominoes_I1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 12
+        x: 64
+        y: 0
         width: 32
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,12 +1012,12 @@ TextureImporter:
       name: tetrominoes_I2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 8
+        width: 32
         height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,12 +1033,12 @@ TextureImporter:
       name: tetrominoes_I3
       rect:
         serializedVersion: 2
-        x: 156
-        y: 12
+        x: 128
+        y: 0
         width: 32
-        height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
