@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Active
+  - Shadow
   layers:
   - Default
   - TransparentFX

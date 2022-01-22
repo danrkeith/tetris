@@ -18,6 +18,8 @@ public class Tetromino : MonoBehaviour
         transform.Rotate(0, 0, value * 90);
 
         frameIndex += value;
+
+        // Loop index
         switch (frameIndex)
         {
             case -1:
