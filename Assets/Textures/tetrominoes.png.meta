@@ -1,49 +1,217 @@
 fileFormatVersion: 2
-guid: c2a815baa09000745a35a0793691a4a4
+guid: 10ea418dcdbd3044ea3882059ba8b6bd
 TextureImporter:
   internalIDToNameTable:
+  - first:
+      213: 1281337459545507
+    second: NES - Tetris - Tetrominos_0
+  - first:
+      213: -6674092093047154055
+    second: NES - Tetris - Tetrominos_1
+  - first:
+      213: 8549327552898329425
+    second: NES - Tetris - Tetrominos_2
+  - first:
+      213: -2431218842527511909
+    second: NES - Tetris - Tetrominos_3
+  - first:
+      213: 5422491736034070426
+    second: NES - Tetris - Tetrominos_4
+  - first:
+      213: 689658517809461853
+    second: NES - Tetris - Tetrominos_5
+  - first:
+      213: -3951155076644737840
+    second: NES - Tetris - Tetrominos_6
+  - first:
+      213: -6732186088641346630
+    second: NES - Tetris - Tetrominos_7
+  - first:
+      213: 1810538007392816282
+    second: NES - Tetris - Tetrominos_8
+  - first:
+      213: -4201501398231728680
+    second: NES - Tetris - Tetrominos_9
+  - first:
+      213: -6775372224915568860
+    second: NES - Tetris - Tetrominos_10
+  - first:
+      213: 906356410064403205
+    second: NES - Tetris - Tetrominos_11
+  - first:
+      213: -5479369309285888068
+    second: NES - Tetris - Tetrominos_12
+  - first:
+      213: 2957406657218214535
+    second: NES - Tetris - Tetrominos_13
+  - first:
+      213: 6313045511493594231
+    second: NES - Tetris - Tetrominos_14
+  - first:
+      213: -2344270171594770097
+    second: NES - Tetris - Tetrominos_15
+  - first:
+      213: -7287902153581913760
+    second: NES - Tetris - Tetrominos_16
+  - first:
+      213: -4486304574294734822
+    second: NES - Tetris - Tetrominos_17
+  - first:
+      213: -7542679242179796777
+    second: NES - Tetris - Tetrominos_18
+  - first:
+      213: -6351953298300642018
+    second: NES - Tetris - Tetrominos_19
+  - first:
+      213: -7241616574301022530
+    second: NES - Tetris - Tetrominos_20
+  - first:
+      213: 7179925441338667700
+    second: NES - Tetris - Tetrominos_21
+  - first:
+      213: -5825442178208303615
+    second: NES - Tetris - Tetrominos_22
+  - first:
+      213: 4974794269731473926
+    second: NES - Tetris - Tetrominos_23
+  - first:
+      213: 6205658275828439435
+    second: NES - Tetris - Tetrominos_24
+  - first:
+      213: 8439908771141120244
+    second: NES - Tetris - Tetrominos_25
+  - first:
+      213: -369469914873299007
+    second: NES - Tetris - Tetrominos_26
+  - first:
+      213: -6070665771940441641
+    second: NES - Tetris - Tetrominos_27
+  - first:
+      213: -4324196896406185006
+    second: NES - Tetris - Tetrominos_28
+  - first:
+      213: -4498931217063957893
+    second: NES - Tetris - Tetrominos_29
+  - first:
+      213: -1360038316699011345
+    second: NES - Tetris - Tetrominos_30
+  - first:
+      213: -1633827595870428470
+    second: NES - Tetris - Tetrominos_31
+  - first:
+      213: -3615601047324282390
+    second: NES - Tetris - Tetrominos_32
+  - first:
+      213: 1192055515763531295
+    second: NES - Tetris - Tetrominos_33
+  - first:
+      213: 4804070309048997725
+    second: NES - Tetris - Tetrominos_34
   - first:
       213: 3709445818118295144
     second: tetrominoes_iconT
   - first:
       213: -7752116965208124944
-    second: tetrominoes_T
+    second: tetrominoes_T0
   - first:
       213: 4750763624248257743
-    second: tetrominoes_iconJ
+    second: tetrominoes_T1
   - first:
       213: -2488201086646379228
-    second: tetrominoes_J
+    second: tetrominoes_T2
   - first:
       213: 5205618366368928378
-    second: tetrominoes_iconZ
+    second: tetrominoes_T3
   - first:
       213: 546114830558191305
-    second: tetrominoes_Z
+    second: tetrominoes_iconJ
   - first:
       213: -1779221807988963651
-    second: tetrominoes_iconO
+    second: tetrominoes_J0
   - first:
       213: 3651333450703869125
-    second: tetrominoes_O
+    second: tetrominoes_J1
   - first:
       213: 2190860275840001142
-    second: tetrominoes_iconS
+    second: tetrominoes_J2
   - first:
       213: -6737366834218334320
-    second: tetrominoes_S
+    second: tetrominoes_J3
   - first:
       213: 3146415343339880570
-    second: tetrominoes_iconL
+    second: tetrominoes_iconZ
   - first:
       213: 8521206161399242214
-    second: tetrominoes_L
+    second: tetrominoes_Z0
   - first:
       213: -3341200455583501121
-    second: tetrominoes_iconI
+    second: tetrominoes_Z1
   - first:
       213: 407170117681334856
-    second: tetrominoes_I
+    second: tetrominoes_Z2
+  - first:
+      213: -2843059000963865632
+    second: tetrominoes_Z3
+  - first:
+      213: 460361682537681683
+    second: tetrominoes_iconO
+  - first:
+      213: -44844208328252519
+    second: tetrominoes_O0
+  - first:
+      213: -7465032090008644908
+    second: tetrominoes_O1
+  - first:
+      213: 1966812858454815442
+    second: tetrominoes_O2
+  - first:
+      213: 4809008640125409720
+    second: tetrominoes_O3
+  - first:
+      213: -1025130975117181954
+    second: tetrominoes_iconS
+  - first:
+      213: 400725352044355035
+    second: tetrominoes_S0
+  - first:
+      213: 3581758082814193955
+    second: tetrominoes_S1
+  - first:
+      213: 7976385842281149873
+    second: tetrominoes_S2
+  - first:
+      213: 4087088136211521739
+    second: tetrominoes_S3
+  - first:
+      213: -488922534617344996
+    second: tetrominoes_iconL
+  - first:
+      213: 4224986719222896288
+    second: tetrominoes_L0
+  - first:
+      213: -4042247701657499833
+    second: tetrominoes_L1
+  - first:
+      213: -7396168207133272419
+    second: tetrominoes_L2
+  - first:
+      213: -392617133763096982
+    second: tetrominoes_L3
+  - first:
+      213: -6581711338200961803
+    second: tetrominoes_iconI
+  - first:
+      213: 413807933144317276
+    second: tetrominoes_I0
+  - first:
+      213: 6557167826993895256
+    second: tetrominoes_I1
+  - first:
+      213: -8650774009575217081
+    second: tetrominoes_I2
+  - first:
+      213: -2086587774403062399
+    second: tetrominoes_I3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,8 +308,8 @@ TextureImporter:
         y: 250
         width: 18
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +322,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_T
+      name: tetrominoes_T0
       rect:
         serializedVersion: 2
         x: 40
@@ -175,15 +343,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_iconJ
+      name: tetrominoes_T1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 210
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 84
+        y: 244
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,7 +364,70 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_J
+      name: tetrominoes_T2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 248
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d93b47b42287dd0800000000000000
+      internalID: -2488201086646379228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_T3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 244
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a725babd2521e3840800000000000000
+      internalID: 5205618366368928378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_iconJ
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 210
+        width: 18
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce5ef18b80349700800000000000000
+      internalID: 546114830558191305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_J0
       rect:
         serializedVersion: 2
         x: 40
@@ -210,8 +441,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d93b47b42287dd0800000000000000
-      internalID: -2488201086646379228
+      spriteID: db6803e313fee47e0800000000000000
+      internalID: -1779221807988963651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_J1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 204
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c494b58d642ca230800000000000000
+      internalID: 3651333450703869125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_J2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 208
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67425fd20df776e10800000000000000
+      internalID: 2190860275840001142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_J3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 204
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0970be47f801082a0800000000000000
+      internalID: -6737366834218334320
       vertices: []
       indices: 
       edges: []
@@ -224,21 +518,21 @@ TextureImporter:
         y: 170
         width: 18
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a725babd2521e3840800000000000000
-      internalID: 5205618366368928378
+      spriteID: a70cc9795105aab20800000000000000
+      internalID: 3146415343339880570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_Z
+      name: tetrominoes_Z0
       rect:
         serializedVersion: 2
         x: 40
@@ -252,8 +546,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ce5ef18b80349700800000000000000
-      internalID: 546114830558191305
+      spriteID: 6ed52144bd7614670800000000000000
+      internalID: 8521206161399242214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_Z1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 164
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4729953eba1a1d0800000000000000
+      internalID: -3341200455583501121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_Z2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 168
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84acc83901f86a500800000000000000
+      internalID: 407170117681334856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_Z3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 164
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3621cd6ec6b88d0800000000000000
+      internalID: -2843059000963865632
       vertices: []
       indices: 
       edges: []
@@ -273,14 +630,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6803e313fee47e0800000000000000
-      internalID: -1779221807988963651
+      spriteID: 3131cdbd288836600800000000000000
+      internalID: 460361682537681683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_O
+      name: tetrominoes_O0
       rect:
         serializedVersion: 2
         x: 44
@@ -294,8 +651,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c494b58d642ca230800000000000000
-      internalID: 3651333450703869125
+      spriteID: 9936c5c1e6ea06ff0800000000000000
+      internalID: -44844208328252519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_O1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d294269dd0e66890800000000000000
+      internalID: -7465032090008644908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_O2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2bed7cfd58b4b10800000000000000
+      internalID: 1966812858454815442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_O3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9957401e70db240800000000000000
+      internalID: 4809008640125409720
       vertices: []
       indices: 
       edges: []
@@ -308,21 +728,21 @@ TextureImporter:
         y: 90
         width: 18
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67425fd20df776e10800000000000000
-      internalID: 2190860275840001142
+      spriteID: efbf3eb3fc006c1f0800000000000000
+      internalID: -1025130975117181954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_S
+      name: tetrominoes_S0
       rect:
         serializedVersion: 2
         x: 40
@@ -336,8 +756,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0970be47f801082a0800000000000000
-      internalID: -6737366834218334320
+      spriteID: bddd815a599af8500800000000000000
+      internalID: 400725352044355035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_S1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3213685dff5f4b130800000000000000
+      internalID: 3581758082814193955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_S2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 88
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b57f90b9a0d1be60800000000000000
+      internalID: 7976385842281149873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_S3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 84
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0e99c610148b830800000000000000
+      internalID: 4087088136211521739
       vertices: []
       indices: 
       edges: []
@@ -350,21 +833,21 @@ TextureImporter:
         y: 50
         width: 18
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a70cc9795105aab20800000000000000
-      internalID: 3146415343339880570
+      spriteID: c1413719b8ff639f0800000000000000
+      internalID: -488922534617344996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_L
+      name: tetrominoes_L0
       rect:
         serializedVersion: 2
         x: 40
@@ -378,8 +861,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed52144bd7614670800000000000000
-      internalID: 8521206161399242214
+      spriteID: 0a61604490b22aa30800000000000000
+      internalID: 4224986719222896288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_L1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 44
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747c090d12d07e7c0800000000000000
+      internalID: -4042247701657499833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_L2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9698c2c3388b5990800000000000000
+      internalID: -7396168207133272419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_L3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 44
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e81590cc42d8af0800000000000000
+      internalID: -392617133763096982
       vertices: []
       indices: 
       edges: []
@@ -392,36 +938,99 @@ TextureImporter:
         y: 13
         width: 24
         height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb4729953eba1a1d0800000000000000
-      internalID: -3341200455583501121
+      spriteID: 5fcee58c86019a4a0800000000000000
+      internalID: -6581711338200961803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tetrominoes_I
+      name: tetrominoes_I0
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 8
         height: 32
-      alignment: 9
+      alignment: 5
       pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84acc83901f86a500800000000000000
-      internalID: 407170117681334856
+      spriteID: c5d3e4c6f142eb500800000000000000
+      internalID: 413807933144317276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_I1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 32
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8575794b56dbffa50800000000000000
+      internalID: 6557167826993895256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_I2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 8
+        height: 32
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748661f3fd642f780800000000000000
+      internalID: -8650774009575217081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tetrominoes_I3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 12
+        width: 32
+        height: 8
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18558027973fa03e0800000000000000
+      internalID: -2086587774403062399
       vertices: []
       indices: 
       edges: []
