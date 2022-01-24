@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         // Find active tetromino
-        activeMino = GameObject.FindWithTag("Active").GetComponent<Tetromino>();
+        activeMino = GameObject.FindWithTag(Tetromino.ACTIVE).GetComponent<Tetromino>();
     }
 
     private void OnRotate(InputValue value)

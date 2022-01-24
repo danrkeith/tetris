@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class Tetromino : MonoBehaviour
 {
-    const int DASFRAMES = 16;
-    const int ASFRAMES = 2;
+    public const string ACTIVE = "Active";
+    private const int DASFRAMES = 16;
+    private const int ASFRAMES = 2;
 
     private int fallFrames = 48;
     private int xVelocity = 0;
 
+    private List<Block> blocks;
+
     private void Start()
     {
+        blocks = new List<Block>();
+
+        foreach (Transform child in transform)
+        {
+            blocks.Add(child.GetComponent<Block>());
+        }
+
         StartCoroutine(nameof(Fall));
     }
 
@@ -38,7 +48,7 @@ public class Tetromino : MonoBehaviour
     {
         int coroutineXVelocity = xVelocity;
 
-        void Move() => transform.Translate(new Vector2(coroutineXVelocity * 0.4f, 0), Space.World);
+        void Move() => transform.Translate(new Vector2(coroutineXVelocity * Block.SIZE, 0), Space.World);
 
         // Initial movement
         Move();
@@ -56,7 +66,17 @@ public class Tetromino : MonoBehaviour
     {
         while (true)
         {
-            transform.Translate(new Vector2(0, -0.4f), Space.World);
+            transform.Translate(new Vector2(0, -Block.SIZE), Space.World);
+
+            foreach (Block block in blocks)
+            {
+                if (block.CheckForBlock(Vector2.down))
+                {
+                    enabled = false;
+                    yield break;
+                }
+            }
+
             yield return new WaitForSeconds(fallFrames / 60f);
         }
     }
