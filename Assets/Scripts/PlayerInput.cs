@@ -22,4 +22,9 @@ public class PlayerInput : MonoBehaviour
     {
         _gameManager.ActiveMino.StartMovement(value.Get<float>());
     }
+
+    private void OnHardDrop()
+    {
+        while (_gameManager.ActiveMino.Move(Vector2.down)) { }
+    }
 }

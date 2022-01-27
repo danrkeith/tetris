@@ -31,6 +31,22 @@ public class Tetromino : MonoBehaviour
         StartCoroutine(nameof(Fall));
     }
 
+    public bool Move(Vector2 dir)
+    {
+        // Ensure no blocks are in mino's way
+        foreach (Block block in _blocks)
+        {
+            if (block.CheckForBlock(dir))
+            {
+                return false;
+            }
+        }
+
+        // Move tetronimo
+        transform.Translate(dir * Block.Size, Space.World);
+        return true;
+    }
+
     public void Rotate(float angle)
     {
         transform.Rotate(0, 0, angle);
@@ -55,51 +71,36 @@ public class Tetromino : MonoBehaviour
         int coroutineXVelocity = _xVelocity;
 
         // Initial movement
-        Move(coroutineXVelocity);
+        Move(Vector2.right * coroutineXVelocity);
         yield return new WaitForSeconds(DASFrames / 60f);
 
         // Autoshift until velocity has changed
         while (coroutineXVelocity == _xVelocity)
         {
-            Move(coroutineXVelocity);
+            Move(Vector2.right * coroutineXVelocity);
             yield return new WaitForSeconds(ASFrames / 60f);
         }
-    }
-
-    private void Move(int dir)
-    {
-        // Ensure no blocks are in mino's way
-        foreach (Block block in _blocks)
-        {
-            if (block.CheckForBlock(Vector2.right * dir))
-            {
-                return;
-            }
-        }
-
-        // Move tetronimo
-        transform.Translate(new Vector2(dir * Block.Size, 0), Space.World);
     }
 
     private IEnumerator Fall()
     {
         while (true)
         {
-            // Check to see if touching block below
-            foreach (Block block in _blocks)
+            if (!Move(Vector2.down))
             {
-                if (block.CheckForBlock(Vector2.down))
-                {
-                    // Block has landed
-                    Debug.Log("Land");
-                    tag = "Untagged";
-                    StopAllCoroutines();
-                    _gameManager.SpawnMino();
-                    yield break;
-                }
-            }
+                // Block has landed
+                Debug.Log("Land");
+                StopAllCoroutines();
 
-            transform.Translate(Vector2.down * Block.Size, Space.World);
+                tag = "Untagged";
+                foreach (Transform child in transform)
+                {
+                    child.tag = "Untagged";
+                }
+
+                _gameManager.SpawnMino();
+                yield break;
+            }
 
             yield return new WaitForSeconds(_fallFrames / 60f);
         }
