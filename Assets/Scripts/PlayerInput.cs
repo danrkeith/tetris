@@ -6,21 +6,20 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerInput : MonoBehaviour
 {
-    private Tetromino activeMino;
+    private GameManager _gameManager;
 
     private void Awake()
     {
-        // Find active tetromino
-        activeMino = GameObject.FindWithTag(Tetromino.ACTIVE).GetComponent<Tetromino>();
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnRotate(InputValue value)
     {
-        activeMino.Rotate(value.Get<float>() * 90);
+        _gameManager.ActiveMino.Rotate(value.Get<float>() * 90);
     }
     
     private void OnMove(InputValue value)
     {
-        activeMino.StartMovement(value.Get<float>());
+        _gameManager.ActiveMino.StartMovement(value.Get<float>());
     }
 }

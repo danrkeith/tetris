@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class Tetromino : MonoBehaviour
 {
-    public const string ACTIVE = "Active";
-    private const int DASFRAMES = 16;
-    private const int ASFRAMES = 2;
+    public const string Active = "Active";
+    private const int DASFrames = 16;
+    private const int ASFrames = 2;
 
-    private int fallFrames = 48;
-    private int xVelocity = 0;
+    private GameManager _gameManager;
+    private int _fallFrames = 48;
+    private int _xVelocity = 0;
 
-    private List<Block> blocks;
+    private List<Block> _blocks;
 
-    private void Start()
+    private void Awake()
     {
-        blocks = new List<Block>();
+        _gameManager = FindObjectOfType<GameManager>();
+
+        _blocks = new List<Block>();
 
         foreach (Transform child in transform)
         {
-            blocks.Add(child.GetComponent<Block>());
+            _blocks.Add(child.GetComponent<Block>());
         }
+    }
 
+    private void Start()
+    {
         StartCoroutine(nameof(Fall));
     }
 
@@ -36,9 +42,9 @@ public class Tetromino : MonoBehaviour
 
     public void StartMovement(float newXVelocity)
     {
-        xVelocity = (int)newXVelocity;
+        _xVelocity = (int)newXVelocity;
 
-        if (xVelocity != 0)
+        if (_xVelocity != 0)
         {
             StartCoroutine(nameof(AutoShift));
         }
@@ -46,19 +52,19 @@ public class Tetromino : MonoBehaviour
 
     private IEnumerator AutoShift()
     {
-        int coroutineXVelocity = xVelocity;
+        int coroutineXVelocity = _xVelocity;
 
-        void Move() => transform.Translate(new Vector2(coroutineXVelocity * Block.SIZE, 0), Space.World);
+        void Move() => transform.Translate(new Vector2(coroutineXVelocity * Block.Size, 0), Space.World);
 
         // Initial movement
         Move();
-        yield return new WaitForSeconds(DASFRAMES / 60f);
+        yield return new WaitForSeconds(DASFrames / 60f);
 
         // Autoshift until velocity has changed
-        while (coroutineXVelocity == xVelocity)
+        while (coroutineXVelocity == _xVelocity)
         {
             Move();
-            yield return new WaitForSeconds(ASFRAMES / 60f);
+            yield return new WaitForSeconds(ASFrames / 60f);
         }
     }
     
@@ -66,18 +72,22 @@ public class Tetromino : MonoBehaviour
     {
         while (true)
         {
-            transform.Translate(new Vector2(0, -Block.SIZE), Space.World);
-
-            foreach (Block block in blocks)
+            foreach (Block block in _blocks)
             {
                 if (block.CheckForBlock(Vector2.down))
                 {
-                    enabled = false;
+                    // Block has landed
+                    Debug.Log("Land");
+                    tag = "Untagged";
+                    StopAllCoroutines();
+                    _gameManager.SpawnMino();
                     yield break;
                 }
             }
 
-            yield return new WaitForSeconds(fallFrames / 60f);
+            transform.Translate(Vector2.down * Block.Size, Space.World);
+
+            yield return new WaitForSeconds(_fallFrames / 60f);
         }
     }
 }

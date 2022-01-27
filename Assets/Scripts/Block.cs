@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public const float SIZE = 0.4f;
+    public const float Size = 0.4f;
+
     public bool CheckForBlock(Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, Block.SIZE);
+        float length = Size * 2 / 3;
+        Vector2 origin = (Vector2)transform.position + (direction * length);
 
-        Debug.DrawRay(transform.position, direction * Block.SIZE, Color.red, 48/60f);
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, length);
 
-        return hit.collider != null && !hit.collider.CompareTag(Tetromino.ACTIVE);
+        Debug.DrawRay(origin, direction * length, Color.red, 48/60f);
+
+        return hit.collider != null && !hit.collider.CompareTag(Tetromino.Active);
     }
 }
