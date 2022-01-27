@@ -11,6 +11,18 @@ public class Tetromino : MonoBehaviour
     private GameManager _gameManager;
     private int _fallFrames = 48;
     private int _xVelocity = 0;
+    private bool _softDrop = false;
+
+    public bool SoftDrop
+    {
+        get => _softDrop;
+        set
+        {
+            _softDrop = value;
+            StopCoroutine(nameof(Fall));
+            StartCoroutine(nameof(Fall));
+        }
+    }
 
     private List<Block> _blocks;
 
@@ -66,6 +78,26 @@ public class Tetromino : MonoBehaviour
         }
     }
 
+    public void HardDrop()
+    {
+        while (Move(Vector2.down)) { }
+        Deactivate();
+    }
+
+    private void Deactivate()
+    {
+        Debug.Log("Deactivated");
+        StopAllCoroutines();
+
+        tag = "Untagged";
+        foreach (Transform child in transform)
+        {
+            child.tag = "Untagged";
+        }
+
+        _gameManager.SpawnMino();
+    }
+
     private IEnumerator AutoShift()
     {
         int coroutineXVelocity = _xVelocity;
@@ -88,21 +120,11 @@ public class Tetromino : MonoBehaviour
         {
             if (!Move(Vector2.down))
             {
-                // Block has landed
-                Debug.Log("Land");
-                StopAllCoroutines();
-
-                tag = "Untagged";
-                foreach (Transform child in transform)
-                {
-                    child.tag = "Untagged";
-                }
-
-                _gameManager.SpawnMino();
+                Deactivate();
                 yield break;
             }
 
-            yield return new WaitForSeconds(_fallFrames / 60f);
+            yield return new WaitForSeconds((_softDrop ? 2 : _fallFrames) / 60f);
         }
     }
 }
