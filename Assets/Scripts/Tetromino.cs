@@ -54,24 +54,38 @@ public class Tetromino : MonoBehaviour
     {
         int coroutineXVelocity = _xVelocity;
 
-        void Move() => transform.Translate(new Vector2(coroutineXVelocity * Block.Size, 0), Space.World);
-
         // Initial movement
-        Move();
+        Move(coroutineXVelocity);
         yield return new WaitForSeconds(DASFrames / 60f);
 
         // Autoshift until velocity has changed
         while (coroutineXVelocity == _xVelocity)
         {
-            Move();
+            Move(coroutineXVelocity);
             yield return new WaitForSeconds(ASFrames / 60f);
         }
     }
-    
+
+    private void Move(int dir)
+    {
+        // Ensure no blocks are in mino's way
+        foreach (Block block in _blocks)
+        {
+            if (block.CheckForBlock(Vector2.right * dir))
+            {
+                return;
+            }
+        }
+
+        // Move tetronimo
+        transform.Translate(new Vector2(dir * Block.Size, 0), Space.World);
+    }
+
     private IEnumerator Fall()
     {
         while (true)
         {
+            // Check to see if touching block below
             foreach (Block block in _blocks)
             {
                 if (block.CheckForBlock(Vector2.down))
