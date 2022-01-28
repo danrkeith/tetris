@@ -68,7 +68,7 @@ public class Tetromino : MonoBehaviour
         }
     }
 
-    public void StartMovement(float newXVelocity)
+    public void StartAutoShift(float newXVelocity)
     {
         _xVelocity = (int)newXVelocity;
 
@@ -86,7 +86,6 @@ public class Tetromino : MonoBehaviour
 
     private void Deactivate()
     {
-        Debug.Log("Deactivated");
         StopAllCoroutines();
 
         tag = "Untagged";
@@ -102,10 +101,6 @@ public class Tetromino : MonoBehaviour
     {
         int coroutineXVelocity = _xVelocity;
 
-        // Initial movement
-        Move(Vector2.right * coroutineXVelocity);
-        yield return new WaitForSeconds(DASFrames / 60f);
-
         // Autoshift until velocity has changed
         while (coroutineXVelocity == _xVelocity)
         {
@@ -118,13 +113,13 @@ public class Tetromino : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds((_softDrop ? 2 : _fallFrames) / 60f);
+
             if (!Move(Vector2.down))
             {
                 Deactivate();
                 yield break;
             }
-
-            yield return new WaitForSeconds((_softDrop ? 2 : _fallFrames) / 60f);
         }
     }
 }

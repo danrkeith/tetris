@@ -20,7 +20,12 @@ public class PlayerInput : MonoBehaviour
     
     private void OnMove(InputValue value)
     {
-        _gameManager.ActiveMino.StartMovement(value.Get<float>());
+        _gameManager.ActiveMino.Move(Vector2.right * value.Get<float>());
+    }
+
+    private void OnAutoShift(InputValue value)
+    {
+        _gameManager.ActiveMino.StartAutoShift(value.Get<float>());
     }
 
     private void OnSoftDrop(InputValue value)

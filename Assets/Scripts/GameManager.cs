@@ -29,11 +29,6 @@ public class GameManager : MonoBehaviour
             ResetMinoQueue();
         }
 
-        SetActiveMino();
-    }
-
-    private void SetActiveMino()
-    {
         ActiveMino = GameObject.FindWithTag(Tetromino.Active).GetComponent<Tetromino>();
     }
 

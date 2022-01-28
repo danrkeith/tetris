@@ -20,7 +20,16 @@
                     "id": "ed62cb9b-f3f2-48d8-8c39-dad49e667d33",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AutoShift",
+                    "type": "Button",
+                    "id": "8049c5c2-bfa6-4608-b82b-0a0323ad2aac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=0.277),Press(behavior=1)",
                     "initialStateCheck": false
                 },
                 {
@@ -194,6 +203,39 @@
                     "action": "Hard Drop",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "Keys",
+                    "id": "4fc3200a-2d10-4903-9cab-1f1bc019f33e",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AutoShift",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "7b79333e-df44-4fbd-80d0-cf6e9bfee829",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AutoShift",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "da673e9a-8164-4563-aacd-97aa4db4d812",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AutoShift",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
