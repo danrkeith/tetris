@@ -5,8 +5,26 @@ using UnityEngine;
 public class Tetromino : MonoBehaviour
 {
     public const string Active = "Active";
-    private const int DASFrames = 16;
-    private const int ASFrames = 2;
+    private const int _dasFrames = 16;
+    private const int _asFrames = 2;
+
+    private static readonly Vector2[] _wallKicksReg = new Vector2[]
+    {
+        new Vector2(0,0), 
+        new Vector2(-1, 0),
+        new Vector2(-1, 1),
+        new Vector2(0, -2),
+        new Vector2(-1, -2)
+    };
+
+    private static readonly Vector2[] _wallKicksI = new Vector2[]
+    {
+        new Vector2(0,0),
+        new Vector2(-2, 0),
+        new Vector2(1, 0),
+        new Vector2(-2, -1),
+        new Vector2(1, 2)
+    };
 
     private GameManager _gameManager;
     private int _fallFrames = 48;
@@ -61,11 +79,10 @@ public class Tetromino : MonoBehaviour
 
     public void Rotate(float angle)
     {
+        // TODO: Wall Kick
+
         // Rotate
         transform.Rotate(0, 0, angle);
-
-        // TODO: Check for wall kicks, unrotate if all kicks are unsuccessful
-
 
         // Reorientate block sprites
         foreach (Transform child in transform)
@@ -115,7 +132,7 @@ public class Tetromino : MonoBehaviour
         while (coroutineXVelocity == _xVelocity)
         {
             Move(Vector2.right * coroutineXVelocity);
-            yield return new WaitForSeconds(ASFrames / 60f);
+            yield return new WaitForSeconds(_asFrames / 60f);
         }
     }
 
