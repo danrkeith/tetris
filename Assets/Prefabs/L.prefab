@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 1067829794495056375}
   - component: {fileID: 1067829794495056368}
   m_Layer: 0
-  m_Name: (2, 0)
+  m_Name: (2, 1)
   m_TagString: Active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 1067829794516865477}
   - component: {fileID: 1067829794516865478}
   m_Layer: 0
-  m_Name: (1, 0)
+  m_Name: (1, 1)
   m_TagString: Active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 1067829794619644446}
   - component: {fileID: 1067829794619644447}
   m_Layer: 0
-  m_Name: (0, 1)
+  m_Name: (2, 0)
   m_TagString: Active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067829794619644899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -0.4, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0.4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1067829794256379809}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 1067829794671408047}
   - component: {fileID: 1067829794671408040}
   m_Layer: 0
-  m_Name: (0, 0)
+  m_Name: (0, 1)
   m_TagString: Active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
