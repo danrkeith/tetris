@@ -61,7 +61,13 @@ public class Tetromino : MonoBehaviour
 
     public void Rotate(float angle)
     {
+        // Rotate
         transform.Rotate(0, 0, angle);
+
+        // TODO: Check for wall kicks, unrotate if all kicks are unsuccessful
+
+
+        // Reorientate block sprites
         foreach (Transform child in transform)
         {
             child.Rotate(0, 0, -angle);
@@ -70,6 +76,7 @@ public class Tetromino : MonoBehaviour
 
     public void StartAutoShift(float newXVelocity)
     {
+        // Set mino's current velocity
         _xVelocity = (int)newXVelocity;
 
         if (_xVelocity != 0)
@@ -80,12 +87,15 @@ public class Tetromino : MonoBehaviour
 
     public void HardDrop()
     {
+        // Move mino down until it can't be moved down
         while (Move(Vector2.down)) { }
         Deactivate();
     }
 
     private void Deactivate()
     {
+        // TODO: Check for line clears
+
         StopAllCoroutines();
 
         tag = "Untagged";
@@ -101,7 +111,7 @@ public class Tetromino : MonoBehaviour
     {
         int coroutineXVelocity = _xVelocity;
 
-        // Autoshift until velocity has changed
+        // Autoshift until mino's velocity has changed
         while (coroutineXVelocity == _xVelocity)
         {
             Move(Vector2.right * coroutineXVelocity);
@@ -113,8 +123,10 @@ public class Tetromino : MonoBehaviour
     {
         while (true)
         {
+            // Fall faster if soft-dropping, otherwise fall at the specified speed
             yield return new WaitForSeconds((_softDrop ? 2 : _fallFrames) / 60f);
 
+            // Move down, otherwise it has landed
             if (!Move(Vector2.down))
             {
                 Deactivate();

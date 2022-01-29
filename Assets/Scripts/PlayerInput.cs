@@ -37,4 +37,10 @@ public class PlayerInput : MonoBehaviour
     {
         _gameManager.ActiveMino.HardDrop();
     }
+
+    private void OnHold()
+    {
+        // TODO: Implement hold interactivity
+        Debug.Log("Hold");
+    }
 }
