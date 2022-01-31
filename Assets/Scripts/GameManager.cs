@@ -18,8 +18,9 @@ public class GameManager : MonoBehaviour
 
     public void SpawnMino()
     {
-        int i = Random.Range(0, _minoQueue.Count);
-        Instantiate(tetrominoes[_minoQueue[i]]);
+        //int i = Random.Range(0, _minoQueue.Count);
+        int i = 1;
+        ActiveMino = Instantiate(tetrominoes[_minoQueue[i]]).GetComponent<Tetromino>();
 
         _minoQueue.RemoveAt(i);
 
@@ -28,8 +29,6 @@ public class GameManager : MonoBehaviour
         {
             ResetMinoQueue();
         }
-
-        ActiveMino = GameObject.FindWithTag(Tetromino.Active).GetComponent<Tetromino>();
     }
 
     private void ResetMinoQueue()

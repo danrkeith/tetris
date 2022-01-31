@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,23 +8,81 @@ public class Tetromino : MonoBehaviour
     public const string Active = "Active";
     private const int _dasFrames = 16;
     private const int _asFrames = 2;
+    private const int _kickCount = 5;
 
-    private static readonly Vector2[] _wallKicksReg = new Vector2[]
+    public bool I = false;
+    public bool O = false;
+
+    private static readonly Vector2[][] _wallKicksReg = new Vector2[][]
     {
-        new Vector2(0,0), 
-        new Vector2(-1, 0),
-        new Vector2(-1, 1),
-        new Vector2(0, -2),
-        new Vector2(-1, -2)
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(-1, 0),
+            new Vector2(-1, 1),
+            new Vector2(0, -2),
+            new Vector2(-1, -2)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(1, 0),
+            new Vector2(1, -1),
+            new Vector2(0, 2),
+            new Vector2(1, 2)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(1, 0),
+            new Vector2(1, 1),
+            new Vector2(0, -2),
+            new Vector2(1, -2)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(-1, 0),
+            new Vector2(-1, -1),
+            new Vector2(0, 2),
+            new Vector2(-1, 2)
+        }
     };
 
-    private static readonly Vector2[] _wallKicksI = new Vector2[]
+    private static readonly Vector2[][] _wallKicksI = new Vector2[][]
     {
-        new Vector2(0,0),
-        new Vector2(-2, 0),
-        new Vector2(1, 0),
-        new Vector2(-2, -1),
-        new Vector2(1, 2)
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(-2, 0),
+            new Vector2(1, 0),
+            new Vector2(-2, -1),
+            new Vector2(1, 2)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(-1, 0),
+            new Vector2(2, 0),
+            new Vector2(-1, 2),
+            new Vector2(2, -1)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(2, 0),
+            new Vector2(-1, 0),
+            new Vector2(2, 1),
+            new Vector2(-1, -2)
+        },
+        new Vector2[]
+        {
+            new Vector2(0,0),
+            new Vector2(1, 0),
+            new Vector2(-2, 0),
+            new Vector2(1, -2),
+            new Vector2(-2, 1)
+        },
     };
 
     private GameManager _gameManager;
@@ -79,7 +138,96 @@ public class Tetromino : MonoBehaviour
 
     public void Rotate(float angle)
     {
-        // TODO: Wall Kick
+        // O piece doesn't rotate
+        if (O)
+        {
+            return;
+        }
+
+        // Wall Kick
+        Vector2[] kicks = new Vector2[_kickCount];
+
+        // Find which set of kicks to use based on rotation taking place
+        int kickIndex;
+        int kickMod;
+        if (angle == -90)
+        {
+            // Regular rotation
+            kickMod = 1;
+            kickIndex = (int)-transform.rotation.eulerAngles.z / 90;
+            if (kickIndex < 0)
+            {
+                kickIndex += 4;
+            }
+        }
+        else if (angle == 90)
+        {
+            // Anticlockwise rotation; go to previous rotation and make negative
+            kickMod = -1;
+            kickIndex = (int)-transform.rotation.eulerAngles.z / 90 - 1;
+            if (kickIndex < 0)
+            {
+                kickIndex += 4;
+            }
+        }
+        else
+        {
+            throw new System.Exception("Attempting non-90degree rotation");
+        }
+
+        // Choose correct kick array for piece
+        if (I)
+        {
+            Array.Copy(_wallKicksI[kickIndex], kicks, _kickCount);
+        }
+        else
+        {
+            Array.Copy(_wallKicksReg[kickIndex], kicks, _kickCount);
+        }
+
+        // Apply modification to each item in kicks
+        for (int i = 0; i < kicks.Length; i++)
+        {
+            kicks[i] *= kickMod;
+        }
+
+        Vector2? kick = null;
+
+        // Check each kick. If any are successful on all blocks, use that kick.
+        foreach (Vector2 k in kicks)
+        {
+            // Check all blocks. If any fail, move on to next kick.
+            bool success = true;
+
+            foreach (Block block in _blocks)
+            {
+                //Debug.Log(k + " outputs " + block.CheckKickForBlock(angle, k));
+
+                if (block.CheckKickForBlock(angle, k))
+                {
+                    success = false;
+                    break;
+                }
+            }
+
+            if (success)
+            {
+                kick = k;
+                break;
+            }
+        }
+
+        // If no successful kick was found, don't rotate
+        if (kick == null)
+        {
+            Debug.Log("Rotation Failed");
+            return;
+        }
+
+        Debug.Log("Applying " + kick + " Kick");
+
+        // Apply kick
+        transform.Translate((Vector2)kick * Block.Size, Space.World);
 
         // Rotate
         transform.Rotate(0, 0, angle);
@@ -122,6 +270,8 @@ public class Tetromino : MonoBehaviour
         }
 
         _gameManager.SpawnMino();
+
+        enabled = false;
     }
 
     private IEnumerator AutoShift()
